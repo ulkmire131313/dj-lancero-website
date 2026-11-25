@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#100d11" />
+<title>Community Nights — DJ &amp; Host for South Florida 55+ Communities | DJ Lancero</title>
+<meta name="description" content="Community Nights with DJ Lancero: a hosted 3-hour dance party built for South Florida 55+ communities. Line-dance teaching, era music, full floors. Now in residence at Century Village Deerfield Beach. Starting at $500." />
+<link rel="icon" href="data:," />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#100d11; --surface:#19151a; --surface-2:#252027;
+    --ink:#fff9fd; --muted:#cfc4cc; --line:rgba(255,255,255,.16);
+    --accent:#ed3f9a; --accent-2:#a75cff; --on-accent:#120810;
+    --shadow:0 24px 70px rgba(0,0,0,.38); --max:1180px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",sans-serif;font-size:17px;line-height:1.65;overflow-x:hidden}
+  h1,h2,h3{font-family:"Barlow Condensed",sans-serif;margin:0;text-wrap:balance;line-height:1.05}
+  a{color:var(--accent)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  .topbar{position:sticky;top:0;z-index:10;background:rgba(16,13,17,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+  .brand{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:24px;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--accent)}
+  .topbar .phone{color:var(--ink);text-decoration:none;font-weight:700}
+  .hero{position:relative;padding:84px 0 64px;background:radial-gradient(1100px 480px at 85% -10%,rgba(167,92,255,.28),transparent 60%),radial-gradient(900px 500px at 8% 0%,rgba(237,63,154,.24),transparent 55%),#0b090d;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--accent);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:13px;margin:0 0 14px}
+  .hero h1{font-size:clamp(44px,7.5vw,84px);font-weight:800;text-transform:uppercase}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero .sub{font-size:clamp(18px,2.4vw,23px);color:var(--muted);max-width:44ch;margin:18px 0 30px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .btn{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:800;text-decoration:none;padding:14px 28px;border-radius:999px;font-size:17px}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .hero .proof-line{margin-top:26px;color:var(--muted);font-size:15px}
+  .hero .proof-line strong{color:var(--ink)}
+  section{padding:64px 0}
+  section.alt{background:var(--surface)}
+  h2{font-size:clamp(32px,4.6vw,52px);font-weight:700;text-transform:uppercase;margin-bottom:14px}
+  h2 em{font-style:normal;color:var(--accent)}
+  .lede{color:var(--muted);max-width:62ch;margin:0 0 28px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+  .card{background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:24px}
+  section.alt .card{background:var(--bg)}
+  .card h3{font-size:24px;font-weight:700;margin-bottom:8px}
+  .card p{color:var(--muted);margin:0}
+  .price{font-family:"Barlow Condensed",sans-serif;font-size:44px;font-weight:800;color:var(--ink)}
+  .price small{font-size:19px;color:var(--muted);font-family:"Manrope",sans-serif;font-weight:600}
+  ul.checks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 26px}
+  ul.checks li{padding-left:28px;position:relative;color:var(--muted)}
+  ul.checks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+  ul.checks li strong{color:var(--ink)}
+  blockquote{margin:0;background:var(--surface-2);border-left:4px solid var(--accent);border-radius:12px;padding:28px}
+  blockquote p{font-size:clamp(22px,3vw,30px);font-family:"Barlow Condensed",sans-serif;font-weight:600;line-height:1.25;margin:0 0 10px}
+  blockquote cite{color:var(--muted);font-style:normal;font-size:15px}
+  .host{display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center}
+  .host img{width:220px;height:220px;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+  @media (max-width:640px){.host{grid-template-columns:1fr}.host img{width:160px;height:160px}}
+  .contact-box{background:linear-gradient(120deg,rgba(237,63,154,.16),rgba(167,92,255,.16));border:1px solid var(--line);border-radius:18px;padding:34px;text-align:center}
+  .contact-box h2{margin-bottom:8px}
+  .contact-box p{color:var(--muted);margin:0 auto 22px;max-width:52ch}
+  footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="https://djlancero.com/">DJ <span>LANCERO</span></a>
+    <a class="phone" href="tel:+13044494733">(304) 449-4733</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker">For Recreation Directors &amp; Social Committees</p>
+    <h1>Community <em>Nights</em></h1>
+    <p class="sub">A hosted dance party built for South Florida 55+ communities — a full dance floor, every generation, hosted start to finish by a DJ who works the room, not just the playlist.</p>
+    <div class="cta-row">
+      <a class="btn" href="#contact">Check a date</a>
+      <a class="btn ghost" href="tel:+13044494733">Call (304) 449-4733</a>
+    </div>
+    <p class="proof-line"><strong>Now in residence:</strong> Century Village Deerfield Beach — recurring community nights, booked through the season.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>The <em>Package</em></h2>
+    <p class="lede"><strong>Community Nights with DJ Lancero</strong> — three hours of music your residents grew up with and still move to: '50s–'80s favorites, Motown, disco, Latin classics, and requests taken all night. The difference is the hosting: line-dance teaching woven into the night, and a real MC reading the room and keeping the energy where the crowd wants it.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Line-Dance Teaching</h3>
+        <p>The participation mechanic, built in. Residents who "don't dance" are on the floor by the second song — taught step by step, at their pace.</p>
+      </div>
+      <div class="card">
+        <h3>Hosted, Not Played</h3>
+        <p>An announcer's voice and timing: shout-outs, celebrations, and mic moments that make the night feel produced — because it is.</p>
+      </div>
+      <div class="card">
+        <h3>Every Generation</h3>
+        <p>Residents, their visiting kids, and grandkids on the same floor. The music bridges all of it without losing the room.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Built for <em>Your Residents</em></h2>
+    <p class="lede">A community night succeeds when everyone can take part — including the people who never dance.</p>
+    <ul class="checks">
+      <li><strong>All mobility levels</strong> — participation from chairs and the floor alike; nobody is a spectator unless they want to be</li>
+      <li><strong>Comfortable volume</strong> — energy on the floor, conversation at the tables</li>
+      <li><strong>Familiar music</strong> — the songs your residents actually know, plus their requests all night</li>
+      <li><strong>Moments for non-dancers</strong> — dedications, birthdays, and mic moments that include the whole room</li>
+      <li><strong>Bilingual hosting</strong> — English and Spanish, naturally mixed the South Florida way</li>
+      <li><strong>Predictable format</strong> — the same hosted shape every time, so regulars know and love the rhythm</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The <em>Proof</em></h2>
+    <p class="lede">Community Nights runs on a recurring contract at Century Village Deerfield Beach — Saturday dances in the ballroom and pool-party afternoons through the season. The residents say it better than any brochure:</p>
+    <blockquote>
+      <p>"The best DJ that ever comes here."</p>
+      <cite>— Heard from the floor at Century Village Deerfield Beach community nights</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="host">
+      <img src="https://djlancero.com/headshot.jpg" alt="DJ Lancero" />
+      <div>
+        <h2>Why a <em>Host</em>, Not Just a DJ</h2>
+        <p class="lede" style="margin-bottom:0">Lance — DJ Lancero — started as a voice actor and MC announcer for major-brand events and arena crowds before he ever touched turntables. Add years performing weddings for crowds from all over the globe and a couple of yearly contracts on cruise ships, and you get the thing a playlist can't give a room: a performer who runs it. Internationally trained, based in Miami, and insured.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Programs for Your <em>Season Calendar</em></h2>
+    <p class="lede">Named formats a director can put on the calendar — book one, or mix them across the season.</p>
+    <div class="cards">
+      <div class="card"><h3>Community Dance Night</h3><p>The flagship Saturday dance: era favorites, line dances, requests, and a floor that stays full.</p></div>
+      <div class="card"><h3>Line-Dance Party</h3><p>A teaching-forward night: classic and new line dances, broken down step by step for every level.</p></div>
+      <div class="card"><h3>Decades Night</h3><p>Motown, Disco, or Sock Hop — a theme your residents can dress for and your flyer can sell.</p></div>
+    </div>
+    <p class="lede" style="margin-top:26px"><strong style="color:var(--ink)">Book one dance — or make it a monthly tradition.</strong> Recurring dates get the recurring rate and first hold on the calendar.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Pricing &amp; <em>The Easy Part</em></h2>
+    <div class="cards">
+      <div class="card">
+        <p class="price">$500 <small>starting at · 3 hours</small></p>
+        <p>Community Nights for clubhouse dances. Recurring monthly dates: let's talk — the series rate rewards the calendar commitment.</p>
+      </div>
+      <div class="card">
+        <h3>Easy on your staff</h3>
+        <p>Licensed &amp; insured (certificate on request) · full production of my own, or I work with your room's system · early setup, fast breakdown · and a ready-to-post promo clip for the community's own channels, included — your event markets itself to your residents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Check a <em>Date</em></h2>
+      <p>Tell me your community and the date you're looking at. Replies within one business day.</p>
+      <div class="cta-row" style="justify-content:center">
+        <a class="btn" href="mailto:lancero@runwithmusic.com?subject=Community%20Nights%20—%20date%20check">Email lancero@runwithmusic.com</a>
+        <a class="btn ghost" href="tel:+13044494733">Call (304) 449-4733</a>
+      </div>
+      <p style="margin-top:20px">See recent community nights on Instagram: <a href="https://www.instagram.com/djlancero/">@djlancero</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>DJ Lancero — Lancero Media · Miami, Florida</span>
+    <span><a href="https://djlancero.com/">djlancero.com</a> · <a href="https://www.instagram.com/djlancero/">Instagram @djlancero</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
